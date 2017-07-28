@@ -1,0 +1,151 @@
+h1 { // Sample override
+	font-size: 30px;
+}
+
+$max-width: 100%;
+
+$font-family: "MyriadProRegular";
+$font-family-articles: "Adigiana 2";
+
+$font-size-p: 0.94vw;
+$font-size-h1: 1.56vw;
+
+// screens
+$medium_screen: 40em !default;
+$large_screen: 53.75em !default;
+
+
+// colors
+$primary: #000 !default;
+$secondary: #fff !default;
+$white: white !default;
+$dark_gray: #333 !default;
+$light_gray: #ddd !default;
+$action_color: #477DCA !default;
+$gainsboro: gainsboro !default;
+
+/* Header */
+// $header_height: 120px;
+
+// menu_centered
+$menu_centered_background: $primary;
+$menu_centered_base_font_color: $secondary;
+$menu_centered_base_border_radius: 6px;
+$menu_centered_large_screen: $large_screen;
+$menu_centered_centered_navigation_padding: 1em;
+$menu_centered_centered_navigation_logo_height: 2em;
+$menu_centered_centered_navigation_height: 60px;
+$menu_centered_centered_navigation_item_padding: 1em;
+$menu_centered_centered_navigation_submenu_padding: 1em;
+$menu_centered_centered_navigation_submenu_width: 12em;
+$menu_centered_centered_navigation_item_nudge: 2.2em;
+$menu_centered_horizontal_bar_mode: $menu_centered_large_screen;
+$menu_centered_centered_navigation_color_hover: $menu_centered_base_font_color;
+$menu_centered_centered_navigation_color: transparentize($menu_centered_base_font_color, 0.3);
+$menu_centered_centered_navigation_background: $menu_centered_background;
+$menu_centered_base_font_color: $menu_centered_base_font_color;
+
+
+// accordion_tabs
+$accordion_tabs_tab_mode: $medium-screen;
+$accordion_tabs_base_border_color: #dcdcdc !default;
+$accordion_tabs_base_border_radius: 3px !default;
+$accordion_tabs_base_background_color: $white;
+$accordion_tabs_base_spacing: 1.5em !default;
+$accordion_tabs_action_color: $action_color;
+$accordion_tabs_tab_border: 1px solid $accordion_tabs_base_border_color;
+$accordion_tabs_tab_content_background: lighten($light_gray, 10);
+$accordion_tabs_tab_active_background: $accordion_tabs_tab_content_background;
+$accordion_tabs_tab_inactive_color: $accordion_tabs_base_background_color;
+$accordion_tabs_tab_inactive_hover_color: darken($light_gray, 5);
+
+
+// cards
+$cards_base_border_color: $gainsboro;
+$cards_base_border_radius: 3px !default;
+$cards_base_background_color: $white;
+$cards_base_spacing: 1.5em !default;
+$cards_action_color: $action_color;
+$cards_base_font_color: $dark_gray;
+$cards_card_border_color: $cards_base_border_color;
+$cards_card_border: 1px solid $cards_card_border_color;
+$cards_card_background: lighten($cards_card_border_color, 10%);
+$cards_card_header_background: $cards_card_background;
+$cards_card_margin: 1em;
+$cards_card_image_hover_opacity: 0.7;
+$cards_card_image_hover_color: #F8F2B4;
+
+
+//bullet_points
+$bullet_points_base_line_height: 1.5em !default;
+$bullet_points_base_font_color: $dark-gray !default;
+$bullet_points_icon_bullet_size: 3.5em;
+
+
+//nav_menu
+$nav_menu_base_border_radius: 3px !default;
+$nav_menu_navigation_padding: 1em;
+$nav_menu_navigation_background: $primary;
+$nav_menu_navigation_color: #f3e936;
+$nav_menu_navigation_color_hover: $white;
+$nav_menu_navigation_height: 60px;
+$nav_menu_navigation_nav_button_background: $action-color;
+$nav_menu_navigation_nav_button_background_hover: lighten($nav_menu_navigation_background, 10%);
+$nav_menu_navigation_nav_button_border: 1px solid lighten($nav_menu_navigation_nav_button_background, 20%);
+$nav_menu_navigation_search_background: lighten($nav_menu_navigation_background, 5);
+$nav_menu_navigation_search_border: 1px solid darken($nav_menu_navigation_background, 5);
+$nav_menu_navigation_active_link_color: transparentize(white, 0.5);
+$nav_menu_navigation_submenu_padding: 1em;
+$nav_menu_navigation_submenu_width: 12em;
+$nav_menu_horizontal_bar_mode: $large-screen;
+
+
+//side_image
+$side_image_base_line_height: 1.5em !default;
+$side_image_base_font_color: $dark-gray !default;
+$side_image_side_image_background_top: #B5EBEB;
+$side_image_side_image_background_bottom: #5DAC5D;
+$side_image_side_image_content_background: #F9F9F9;
+$side_image_side_image_border: 1px solid darken(transparentize($side_image_side_image_background_bottom, 0.8), 30%);
+
+
+//grid_items
+$grid_items_action_color: $action_color;
+$grid_items_base_background_color: $white;
+$grid_items_medium_screen: $medium_screen;
+$grid_items_large_screen: $large_screen;
+$grid_items_items_background: $grid_items_base_background_color;
+$grid_items_item_background: desaturate($grid_items_action_color, 30%);
+$grid_items_item_colors:
+  desaturate($grid_items_action_color, 30%),
+  #3581A5,
+  #5FBEBE,
+  #98C79A,
+  #A7A891,
+  #BDCC97,
+  #979EA0;
+$grid_items_item_border-size: 9px;
+$grid_items_item_columns: 4;
+$grid_items_item_big_columns: 8;
+$grid_items_item_color: $white;
+$grid_items_item_height: 14em;
+
+
+//footer_menu
+$footer_base_spacing: 1.5em !default;
+$footer_medium_screen: $medium_screen;
+$footer_large_screen: $large_screen;
+$footer_footer_background: $primary;
+$footer_footer_color: $secondary;
+$footer_footer_link_color: transparentize($footer_footer_color, 0.6);
+$footer_footer_disclaimer_color: transparentize($footer_footer_color, 0.6);
+
+
+// footer_menu
+$footer_menu_base_spacing: 1.5em !default;
+$footer_menu_medium_screen: $medium_screen;
+$footer_menu_large_screen: $large_screen;
+$footer_menu_footer_background: $primary;
+$footer_menu_footer_color: $secondary;
+$footer_menu_footer_link_color: transparentize($footer_menu_footer_color, 0.6);
+$footer_menu_footer_disclaimer_color: transparentize($footer_menu_footer_color, 0.6);

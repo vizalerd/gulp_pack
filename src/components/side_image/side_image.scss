@@ -1,0 +1,60 @@
+.side-image {
+  background: transparent;
+
+  @include media($large-screen) {
+    @include row(table);
+  }
+
+  .images-wrapper {
+    // background: url(../img/transformer.png),
+    //             no-repeat $side_image_side_image_background_top scroll;
+    // background-color: $side_image_side_image_background_top;
+    background-size: cover;
+    display: block;
+    min-height: 12em;
+    padding: 3em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      background-position: middle;
+      background-size: cover;
+    }
+  }
+
+  .side-image-content {
+    @include span-columns(12);
+    padding: 1em 1em 4em 1em;
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      padding: 4em 4em;
+    }
+
+    h1 {
+      text-shadow: 5px 6px 0 rgba(0, 0, 0, 0.18);
+      color: #f3e936;
+      font-family: $font-family-articles;
+      font-size: 5.36vw;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      text-shadow: 5px 6px 0 rgba(0, 0, 0, 0.18);
+      color: #f3e936;
+      font-family: $font-family-articles;
+      font-size: 2.86vw;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0 !important;
+    }
+
+    p {
+      color: $side_image_base_font_color;
+      line-height: $side_image_base_line_height;
+      margin-bottom: 3em;
+    }
+  }
+
+  @include reset-display();
+}
